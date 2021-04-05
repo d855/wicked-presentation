@@ -8,17 +8,17 @@ window.addEventListener('load', function(){
     
     setTimeout(function(){
         text.classList.remove('hidden');
-        text.classList.add('wicked-bounce-In');
+        text.classList.add('wicked-bounceIn');
     }, 200);
     
     setTimeout(function(){
         select.classList.remove('hidden');
-        select.classList.add('wicked-bounce-In');
+        select.classList.add('wicked-bounceIn');
     }, 400)
     
     setTimeout(function(){
         icon.classList.remove('hidden');
-        icon.classList.add('wicked-bounce-In');
+        icon.classList.add('wicked-bounceIn');
     }, 600)
     
     
