@@ -1,0 +1,136 @@
+.wicked {
+    &-fade-In {
+        animation-name: fade-In;
+        animation-duration: 1s;
+    }
+
+    &-fade-In-Top {
+        animation-name: fade-In-Top;
+        animation-duration: 1s;
+    }
+
+    &-fade-In-Bottom {
+        animation-name: fade-In-Bottom;
+        animation-duration: 1s;
+    }
+
+    &-fade-In-Left {
+        animation-name: fade-In-Left;
+        animation-duration: 1s;
+    }
+
+    &-fade-In-Right {
+        animation-name: fade-In-Right;
+        animation-duration: 1s;
+    }
+
+    &-fade-Out {
+        animation-name: fade-Out;
+        animation-duration: 1s;
+    }
+
+    &-fade-Out-Top {
+        animation-name: fade-Out-Top;
+        animation-duration: 1s;
+    }
+
+    &-fade-Out-Bottom {
+        animation-name: fade-Out-Bottom;
+        animation-duration: 1s;
+    }
+
+    &-fade-Out-Left {
+        animation-name: fade-Out-Left;
+        animation-duration: 1s;
+    }
+
+    &-fade-Out-Right {
+        animation-name: fade-Out-Right;
+        animation-duration: 1s;
+    }
+
+    &-shake-X {
+        animation-name: shake-X;
+        animation-duration: 1s;
+    }
+
+    &-shake-Y {
+        animation-name: shake-Y;
+        animation-duration: 1s;
+    }
+
+    &-jump-In-Top {
+        animation-name: jump-In-Top;
+        animation-duration: 1s;
+    }
+
+    &-jump-In-Bottom {
+        animation-name: jump-In-Bottom;
+        animation-duration: 1s;
+    }
+
+    &-jump-In-Left {
+        animation-name: jump-In-Left;
+        animation-duration: 1s;
+    }
+
+    &-jump-In-Right {
+        animation-name: jump-In-Right;
+        animation-duration: 1s;
+    }
+
+    &-jump-Out-Top {
+        animation-name: jump-Out-Top;
+        animation-duration: 1s;
+    }
+
+    &-jump-Out-Bottom {
+        animation-name: jump-Out-Bottom;
+        animation-duration: 1s;
+    }
+
+    &-jump-Out-Left {
+        animation-name: jump-Out-Left;
+        animation-duration: 1s;
+    }
+
+    &-jump-Out-Right {
+        animation-name: jump-Out-Right;
+        animation-duration: 1s;
+    }
+
+    &-bounce-In {
+        animation-name: bounce-In;
+        animation-duration: 1s;
+    }
+
+    &-bounce-Out {
+        animation-name: bounce-Out;
+        animation-duration: 1s;
+    }
+
+    &-rotate-X {
+        animation-name: rotate-X;
+        animation-duration: 1s;
+    }
+
+    &-rotate-Y {
+        animation-name: rotate-Y;
+        animation-duration: 1s;
+    }
+
+    &-rotate-Z {
+        animation-name: rotate-Z;
+        animation-duration: 1s;
+    }
+
+    &-spin-In {
+        animation-name: spin-In;
+        animation-duration: 1s;
+    }
+
+    &-spin-Out {
+        animation-name: spin-Out;
+        animation-duration: 1s;
+    }
+}
