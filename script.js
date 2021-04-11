@@ -5,6 +5,7 @@ window.addEventListener('load', function(){
     var text = document.querySelector('#main p');
     var select = document.getElementById('drop');
     var icon = document.getElementById('icon');
+    var h1 = document.getElementById('head1');
     
     setTimeout(function(){
         text.classList.remove('hidden');

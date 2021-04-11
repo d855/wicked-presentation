@@ -133,4 +133,70 @@
         animation-name: spinOut;
         animation-duration: 1s;
     }
+
+    &-rollLeft {
+        animation-name: rollLeft;
+        animation-duration: 1s;
+    }
+
+    &-rollRight {
+        animation-name: rollRight;
+        animation-duration: 1s;
+    }
+
+    &-rollOutLeft {
+        animation-name: rollOutLeft;
+        animation-duration: 1s;
+    }
+
+    &-rollOutRight {
+        animation-name: rollOutRight;
+        animation-duration: 1s;
+    }
+
+    &-blurIn {
+        animation-name: blurIn;
+        animation-duration: 1s;
+    }
+
+    &-blurInTop {
+        animation-name: blurInTop;
+        animation-duration: 1s;
+    }
+
+    &-blurInBottom {
+        animation-name: blurInBottom;
+        animation-duration: 1s;
+    }
+
+    &-blurInLeft {
+        animation-name: blurInLeft;
+        animation-duration: 1s;
+    }
+
+    &-blurInRight {
+        animation-name: blurInRight;
+        animation-duration: 1s;
+    }
+
+    &-blurOut {
+        animation-name: blurOut;
+        animation-duration: 1s;
+    }
+
+    &-blurOutTop {
+        animation-name: blurOutTop;
+        animation-duration: 1s;
+    }
+
+    &-blurOutBottom {
+        animation-name: blurOutBottom;
+        animation-duration: 1s;
+    }
+
+    &-blurOutLeft {
+        animation-name: blurOutLeft;
+        animation-duration: 1s;
+    }
+
 }

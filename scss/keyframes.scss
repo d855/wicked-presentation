@@ -12,11 +12,6 @@
     50% {
         opacity: 0.3;
     }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 @keyframes fadeInBottom {
@@ -27,11 +22,6 @@
 
     50% {
         opacity: 0.3;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -44,11 +34,6 @@
     50% {
         opacity: 0.3;
     }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 
 @keyframes fadeInRight {
@@ -60,11 +45,6 @@
     50% {
         opacity: 0.3;
     }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 
 @keyframes fadeOut {
@@ -73,11 +53,6 @@
 }
 
 @keyframes fadeOutTop {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
     50% {
         opacity: 0.3;
     }
@@ -89,11 +64,6 @@
 }
 
 @keyframes fadeOutBottom {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
     50% {
         opacity: 0.3;
     }
@@ -105,11 +75,6 @@
 }
 
 @keyframes fadeOutLeft {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }   
-
     50% {
         opacity: 0.3;
     }
@@ -121,11 +86,6 @@
 }
 
 @keyframes fadeOutRight {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }   
-
     50% {
         opacity: 0.3;
     }
@@ -163,10 +123,6 @@
 }
 
 @keyframes shakeY {
-    0% {
-        transform: translateY(0);
-    }
-    
     20% {
         transform: translateY(-15px);
     }
@@ -181,10 +137,6 @@
     
     80% {
         transform: translateY(10px);
-    }
-    
-    100% {
-        transform: translateY(0);
     }
 }
 
@@ -201,10 +153,6 @@
     75% {
         transform: translateY(-40px);
     }
-    100% {
-        transform: translateY(0);
-    }
-        
 }
 
 @keyframes jumpInBottom {
@@ -220,10 +168,6 @@
 
     75% {
         transform: translateY(40px);
-    }
-
-    100% {
-        transform: translateY(0);
     }
 }
 
@@ -241,10 +185,6 @@
     70% {
         transform: translateX(-40px);
     }
-
-    100% {
-        transform: translateX(0);
-    }
 }
 
 @keyframes jumpInRight {
@@ -261,20 +201,10 @@
     70% {
         transform: translateX(40px);
     }
-
-    100% {
-        transform: translateX(0);
-    }
 }
 
 @keyframes jumpOutTop {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
     50% {
-        opacity: 1;
         transform: translateY(100px);
     }
 
@@ -285,13 +215,7 @@
 }
 
 @keyframes jumpOutBottom {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
     50% {
-        opacity: 1;
         transform: translateY(-100px);
     }
 
@@ -302,12 +226,7 @@
 }
 
 @keyframes jumpOutLeft {
-    0% {
-        opacity: 1;
-    }
-
     50% {
-        opacity: 1;
         transform: translateX(100px);
     }
 
@@ -318,12 +237,7 @@
 }
 
 @keyframes jumpOutRight {
-    0% {
-        opacity: 1;
-    }
-
     50% {
-        opacity: 1;
         transform: translateX(-100px);
     }
 
@@ -379,10 +293,6 @@
 }
 
 @keyframes rotateX {
-    0% {
-        transform: rotateX(0deg);
-    }
-
     20% {
         transform: rotateX(-20deg);
     }
@@ -397,10 +307,6 @@
 }
 
 @keyframes rotateY {
-    0% {
-        transform: rotateY(0deg);
-    }
-
     20% {
         transform: rotateY(-20deg);
     }
@@ -415,10 +321,6 @@
 }
 
 @keyframes rotateZ {
-    0% {
-        transform: rotateZ(0deg);
-    }
-
     20% {
         transform: rotateZ(-20deg);
     }
@@ -467,5 +369,194 @@
     100% {
         opacity: 0;
         transform: rotateZ(0deg) scale(0);
+    }
+}
+
+@keyframes rollLeft {
+   0% {
+       opacity: 0;
+       transform: translateX(-200px) rotate(400deg);
+   }
+
+   40%  {
+       opacity: 1;
+   }
+
+   50% {
+       transform: translateX(40px) rotate(40deg);
+   }
+}
+
+@keyframes rollRight {
+   0% {
+       opacity: 0;
+       transform: translateX(200px) rotate(400deg);
+   }
+
+   40%  {
+       opacity: 1;
+   }
+
+   50% {
+       transform: translateX(-40px) rotate(40deg);
+   }
+}
+
+@keyframes rollOutLeft {
+
+    40% {
+        transform: translateX(40px) rotate(-40deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-200px) rotate(400deg);
+        opacity: 0;
+    }
+}
+
+@keyframes rollOutRight {
+    40% {
+        transform: translateX(-40px) rotate(-40deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(200px) rotate(400deg);
+        opacity: 0;
+    }
+}
+
+@keyframes blurIn {
+    from {
+        opacity: 0;
+        filter: blur(20px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blurInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+        filter: blur(20px);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blurInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+        filter: blur(20px);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blurInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+        filter: blur(20px);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blurInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+        filter: blur(20px);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blurOut {
+    from {
+        opacity: 1;
+        filter: blur(20px);
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes blurOutTop {
+    0% {
+        opacity: 1;
+        filter: blur(20px);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes blurOutBottom {
+    0% {
+        opacity: 1;
+        filter: blur(20px);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+@keyframes blurOutLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(20px);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50px);
     }
 }

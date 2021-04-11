@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="main" class="relative flex flex-col items-center w-screen h-screen bg-blue-300">
-        <h1 class="text-8xl font-sans font-semibold text-black text-opacity-80 mt-40 wicked-bounceIn">wicked-animations</h1>
+        <h1 id="head1" class="text-8xl font-sans font-semibold text-black text-opacity-80 mt-40 wicked-bounceIn">wicked-animations</h1>
         <p class="hidden mt-10 text-2xl">Some cool css animations for your project</p>
         <div id="drop" class="hidden">
             <select id="dropdown" class="mt-20 w-48 p-2 rounded-md focus:outline-none">
@@ -57,7 +57,26 @@
                     <option value="spinIn">spinIn</option>
                     <option value="spinOut">spinOut</option>
                 </optgroup>
-
+                <optgroup label="roll">
+                    <option value="rollLeft">rollLeft</option>
+                    <option value="rollRight">rollRight</option>
+                    <option value="rollOutLeft">rollOutLeft</option>
+                    <option value="rollOutRight">rollOutRight</option>
+                </optgroup>
+                <optgroup label="blur">
+                    <option value="blurIn">blurIn</option>
+                    <option value="blurInTop">blurInTop</option>
+                    <option value="blurInBottom">blurInBottom</option>
+                    <option value="blurInLeft">blurInLeft</option>
+                    <option value="blurInRight">blurInRight</option>
+                </optgroup>
+                <optgroup label="blurOut">
+                    <option value="blurOut">blurOut</option>
+                    <option value="blurOutTop">blurOutTop</option>
+                    <option value="blurOutBottom">blurOutBottom</option>
+                    <option value="blurOutLeft">blurOutLeft</option>
+                    <option value="blurOutRight">blurOutRight</option>
+                </optgroup>
             </select>
             <button id="anime" class="ml-10 font-semibold px-5 py-2 border border-purple-500 rounded-md bg-purple-500 text-white transition ease focus:outline-none">ANIMATE</button>
         </div>
@@ -72,9 +91,9 @@
             <div id="one" class="flex flex-col items-center w-1/4 h-96 bg-white rounded-md p-4 mb-10">
                 <img class="w-14 h-14 mb-5 mt-10" src="images/up.png" alt="">
                 <p class="text-xl font-semibold font-sans">First things first.</p>
-                <p class="mt-5">Download library files from <a class="text-blue-500 underline" href="#">here</a></p>
+                <p class="mt-5">Download library files from <a class="text-blue-500 underline" href="images/up.png" download>here</a></p>
                 <p>or</p>
-                <p>visit <span class="font-semibold">Github</span> repo <a class="text-blue-500 underline" href="#">here</a>.</p>
+                <p>visit <span class="font-semibold">Github</span> repo <a class="text-blue-500 underline" target="_blank" href="https://github.com/d855/wicked-animations">here</a>.</p>
                 <p class="mt-5">Add library files to your project.</p>
             </div>
             <div id="two" class="flex flex-col items-center w-1/4 h-96 bg-white rounded-md p-4 mb-10">
@@ -97,7 +116,7 @@
             <p class="mb-5 text-xl text-white">For more information head to the GitHub repo.</p>
             <p class="text-xl text-white">There you can find a list of all the animations and additional things that you can use for your project.</p>
         </div>
-        <a class="mt-10" href=""><img class="h-5 w-5" src="images/github.png" alt=""></a>
+        <a class="mt-10" target="_blank" href="https://github.com/d855/wicked-animations"><img class="h-5 w-5" src="images/github.png" alt=""></a>
     </div>
 </body>
 </html>
