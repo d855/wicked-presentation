@@ -455,8 +455,6 @@
 }
 @keyframes blurOutLeft {
   0% {
-    opacity: 1;
-    transform: translateX(0);
     filter: blur(20px);
   }
   50% {
@@ -465,6 +463,18 @@
   100% {
     opacity: 0;
     transform: translateX(-50px);
+  }
+}
+@keyframes blurOutRight {
+  0% {
+    filter: blur(20px);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(50px);
   }
 }
 .wicked-fadeIn {
@@ -627,6 +637,10 @@
   animation-name: blurOutLeft;
   animation-duration: 1s;
 }
+.wicked-blurOutRight {
+  animation-name: blurOutRight;
+  animation-duration: 1s;
+}
 
 .duration-100 {
   animation-duration: 0.1s;
@@ -662,10 +676,6 @@
 
 .duration-900 {
   animation-duration: 0.9s;
-}
-
-.duration-1000 {
-  animation-duration: 1s;
 }
 
 .duration-1500 {

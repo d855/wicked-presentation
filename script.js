@@ -5,7 +5,6 @@ window.addEventListener('load', function(){
     var text = document.querySelector('#main p');
     var select = document.getElementById('drop');
     var icon = document.getElementById('icon');
-    var h1 = document.getElementById('head1');
     
     setTimeout(function(){
         text.classList.remove('hidden');
@@ -26,14 +25,14 @@ window.addEventListener('load', function(){
     
     
     anime.addEventListener('click', function(){
-        var dropdown = document.getElementById('dropdown').value;
+        var value  = document.getElementById('dropdown').value;
 
-        animateMe(dropdown);
+        animateMe(value);
 
     })
     
     dropD.addEventListener('change', function(){
-        dropD = document.getElementById('dropdown').value;
+        dropD = this.value;
 
         animateMe(dropD);
 
