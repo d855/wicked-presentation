@@ -17,7 +17,7 @@ Next step is to add animation class to the element.
 
 `` <div class="wicked-fadeIn"> Your content goes here </div> ``
 
-**Important** : Every class needs to have a prefix of ``wicked-`` in order to work properly.
+**Important** : Every animation class name needs to have a prefix of ``wicked-`` in order to work properly.
 
 ### List of Class names you can use
 
