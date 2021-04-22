@@ -339,7 +339,7 @@
 }
 @keyframes rollOutLeft {
   40% {
-    transform: translateX(40px) rotate(-40deg);
+    transform: translateX(40px) rotate(40deg);
     opacity: 1;
   }
   100% {
@@ -475,6 +475,66 @@
   100% {
     opacity: 0;
     transform: translate(50px);
+  }
+}
+@keyframes wave {
+  20% {
+    transform: rotate(-40deg);
+    transform-origin: center bottom;
+  }
+  40% {
+    transform: rotate(40deg);
+    transform-origin: center bottom;
+  }
+  60% {
+    transform: rotate(-40deg);
+    transform-origin: center bottom;
+  }
+  80% {
+    transform: rotate(40deg);
+    transform-origin: center bottom;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  40% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes doorOpen {
+  0% {
+    transform-origin: center right;
+    transform: perspective(300px) rotateY(0deg);
+  }
+  100% {
+    transform-origin: center right;
+    transform: perspective(300px) rotateY(180deg);
+  }
+}
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2);
+    filter: blur(10px);
   }
 }
 .wicked-fadeIn {
@@ -639,6 +699,22 @@
 }
 .wicked-blurOutRight {
   animation-name: blurOutRight;
+  animation-duration: 1s;
+}
+.wicked-wave {
+  animation-name: wave;
+  animation-duration: 1s;
+}
+.wicked-blink {
+  animation-name: blink;
+  animation-duration: 1s;
+}
+.wicked-doorOpen {
+  animation-name: doorOpen;
+  animation-duration: 1s;
+}
+.wicked-vanish {
+  animation-name: vanish;
   animation-duration: 1s;
 }
 

@@ -204,4 +204,23 @@
         animation-duration: 1s;
     }
 
+    &-wave {
+        animation-name: wave;
+        animation-duration: 1s;
+    }
+
+    &-blink {
+        animation-name: blink;
+        animation-duration: 1s;
+    }
+
+    &-doorOpen {
+        animation-name: doorOpen;
+        animation-duration: 1s;
+    }
+
+    &-vanish {
+        animation-name: vanish;
+        animation-duration: 1s;
+    }
 }
