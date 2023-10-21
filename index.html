@@ -1,129 +1,145 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wicked</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/wicked.css">
-    <script src="script.js"></script>
-</head>
-<body class="overflow-y-scroll overflow-y-hidden">
-    <div id="main" class="relative flex flex-col items-center w-screen h-screen bg-blue-300">
-        <h1 id="head1" class="text-7xl font-sans font-semibold text-black text-opacity-80 mt-16 wicked-bounceIn">wicked-animations</h1>
-        <p class="hidden mt-10 text-2xl font-light">Free to use CSS animation library</p>
-        <div id="drop" class="hidden">
-            <select id="dropdown" class="mt-20 w-48 p-2 rounded-md focus:outline-none">
-                <optgroup label="fade">
-                    <option value="fadeIn">fadeIn</option>
-                    <option value="fadeInTop">fadeInTop</option>
-                    <option value="fadeInBottom">fadeInBottom</option>
-                    <option value="fadeInLeft">fadeInLeft</option>
-                    <option value="fadeInRight">fadeInRight</option>
-                </optgroup>
-                <optgroup label="fadeOut">
-                    <option value="fadeOut">fadeOut</option>
-                    <option value="fadeOutTop">fadeOutTop</option>
-                    <option value="fadeOutBottom">fadeOutBottom</option>
-                    <option value="fadeOutLeft">fadeOutLeft</option>
-                    <option value="fadeOutRight">fadeOutRight</option>
-                </optgroup>
-                <optgroup label="shake">
-                    <option value="shakeX">shakeX</option>
-                    <option value="shakeY">shakeY</option>
-                </optgroup>
-                <optgroup label="jumpIn">
-                    <option value="jumpInTop">jumpInTop</option>
-                    <option value="jumpInBottom">jumpInBottom</option>
-                    <option value="jumpInLeft">jumpInLeft</option>
-                    <option value="jumpInRight">jumpInRight</option>
-                </optgroup>
-                <optgroup label="jumpOut">
-                    <option value="jumpOutTop">jumpOutTop</option>
-                    <option value="jumpOutBottom">jumpOutBottom</option>
-                    <option value="jumpOutLeft">jumpOutLeft</option>
-                    <option value="jumpOutRight">jumpOutRight</option>
-                </optgroup>
-                <optgroup label="bounce">
-                    <option value="bounceIn">bounceIn</option>
-                    <option value="bounceOut">bounceOut</option>
-                </optgroup>
-                <optgroup label="rotate">
-                    <option value="rotateX">rotateX</option>
-                    <option value="rotateY">rotateY</option>
-                    <option value="rotateZ">rotateZ</option>
-                </optgroup>
-                <optgroup label="spin">
-                    <option value="spinIn">spinIn</option>
-                    <option value="spinOut">spinOut</option>
-                </optgroup>
-                <optgroup label="roll">
-                    <option value="rollLeft">rollLeft</option>
-                    <option value="rollRight">rollRight</option>
-                    <option value="rollOutLeft">rollOutLeft</option>
-                    <option value="rollOutRight">rollOutRight</option>
-                </optgroup>
-                <optgroup label="blur">
-                    <option value="blurIn">blurIn</option>
-                    <option value="blurInTop">blurInTop</option>
-                    <option value="blurInBottom">blurInBottom</option>
-                    <option value="blurInLeft">blurInLeft</option>
-                    <option value="blurInRight">blurInRight</option>
-                </optgroup>
-                <optgroup label="blurOut">
-                    <option value="blurOut">blurOut</option>
-                    <option value="blurOutTop">blurOutTop</option>
-                    <option value="blurOutBottom">blurOutBottom</option>
-                    <option value="blurOutLeft">blurOutLeft</option>
-                    <option value="blurOutRight">blurOutRight</option>
-                </optgroup>
-                <optgroup label="other">
-                    <option value="wave">wave</option>
-                    <option value="blink">blink</option>
-                    <option value="vanish">vanish</option>
-                    <option value="doorOpen">doorOpen</option>
-                </optgroup>
-            </select>
-            <button id="anime" class="ml-10 font-semibold px-5 py-2 border border-purple-500 rounded-md bg-purple-500 text-white transition ease focus:outline-none">ANIMATE</button>
-        </div>
-        <div id="icon" class="hidden w-40 h-40 mt-28 lg:mt-60 bg-white p-10 rounded-full">
-            <img id="bee" src="images/bee.png" alt="">
-        </div>
-        <img class="h-5 w-5 absolute bottom-10 animate-bounce" src="images/down-arrow.svg" alt="">
-    </div>
-    <div class="relative flex flex-col w-screen h-full bg-yellow-200 items-center">
-        <h2 class="text-4xl font-sans text-blue-800 font-bold text-opacity-80 mt-20 mb-20">How to use?</h2>
-        <div id="steps" class="flex flex-col items-center w-full mt-5 justify-around">
-            <div class="card flex flex-col items-center bg-white w-full md:w-1/2 xl:w-1/4 mb-10 p-10">
-                <img class="w-14 h-14 mb-5 mt-10" src="images/up.png" alt="up">
-                <p class="text-xl font-semibold font-sans">First things first.</p>
-                <p class="mt-5">Download library files from <a class="text-blue-500 underline" href="./wicked-animations.zip" download="wicked-animations">here </a></p>
-                <p>or</p>
-                <p>visit <span class="font-semibold">Github</span> repo <a class="text-blue-500 underline" target="_blank" href="https://github.com/d855/wicked-presentation">here</a>.</p>
-                <p class="mt-5">Add library files to your project.</p>
-            </div>
-            <div class="card flex flex-col items-center bg-white w-full md:w-1/2 xl:w-1/4 mb-10 p-10">
-                <img class="w-14 h-14 mb-5 mt-10" src="images/peace.png" alt="peace">
-                <p class="text-xl font-semibold font-sans">Link it.</p>
-                <p class="mt-5">Link css file to your header.</p>
-                <p class="bg-gray-700 text-gray-500 p-5 mt-5 rounded-md">&lt;<span class="text-red-500">link</span> <span class="text-green-500 italic">rel</span>=<span class="text-yellow-500">"stylesheet"</span> <span class="text-green-500 italic">href</span>=<span class="text-yellow-500">"css/wicked.css"</span>&gt;</p>
-            </div>
-            <div class="card flex flex-col items-center bg-white w-full md:w-1/2 xl:w-1/4 mb-20 p-10">
-                <img class="w-14 h-14 mb-5 mt-10" src="images/snap.png" alt="snap">
-                <p class="text-xl font-semibold font-sans">Voilà</p>
-                <p class="mt-5">Add the animation class to your element and it will perform animation.</p>
-                <p class="bg-gray-700 text-gray-500 p-5 mt-5 rounded-md">&lt;<span class="text-red-500">div</span> <span class="text-green-500 italic">class</span>="<span class="text-yellow-500">wicked-rotateX</span>"&gt; <span class="text-white">Example</span> &lt;/<span class="text-red-500">div</span>&gt;</p>
-            </div>
-        </div>
-    </div>
-    <div class="relative flex flex-col justify-center items-center w-sreen h-screen bg-indigo-400">
-        <div class="text-center">
-            <p class="mb-5 text-xl text-white">This library was created by pure fun and love for animations.</p>
-            <p class="mb-5 text-xl text-white">For more information head to the GitHub repo.</p>
-            <p class="text-xl text-white">There you can find a README file with list of all the animations and additional things that you can use for your project.</p>
-        </div>
-        <a class="mt-10" target="_blank" href="https://github.com/d855/wicked-presentation"><img class="h-5 w-5" src="images/github.png" alt="github"></a>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Wicked</title>
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/wicked.css">
+		<script src="script.js"></script>
+	</head>
+	<body class="overflow-y-scroll overflow-y-hidden">
+		<div id="main" class="relative flex flex-col items-center w-screen h-screen bg-blue-300">
+			<h1 id="head1" class="text-7xl font-sans font-semibold text-black text-opacity-80 mt-16 wicked-bounceIn">
+				wicked-animations</h1>
+			<p class="hidden mt-10 text-2xl font-light">Free to use CSS animation library</p>
+			<div id="drop" class="hidden">
+				<select id="dropdown" class="mt-20 w-48 p-2 rounded-md focus:outline-none">
+					<optgroup label="fade">
+						<option value="fadeIn">fadeIn</option>
+						<option value="fadeInTop">fadeInTop</option>
+						<option value="fadeInBottom">fadeInBottom</option>
+						<option value="fadeInLeft">fadeInLeft</option>
+						<option value="fadeInRight">fadeInRight</option>
+					</optgroup>
+					<optgroup label="fadeOut">
+						<option value="fadeOut">fadeOut</option>
+						<option value="fadeOutTop">fadeOutTop</option>
+						<option value="fadeOutBottom">fadeOutBottom</option>
+						<option value="fadeOutLeft">fadeOutLeft</option>
+						<option value="fadeOutRight">fadeOutRight</option>
+					</optgroup>
+					<optgroup label="shake">
+						<option value="shakeX">shakeX</option>
+						<option value="shakeY">shakeY</option>
+					</optgroup>
+					<optgroup label="jumpIn">
+						<option value="jumpInTop">jumpInTop</option>
+						<option value="jumpInBottom">jumpInBottom</option>
+						<option value="jumpInLeft">jumpInLeft</option>
+						<option value="jumpInRight">jumpInRight</option>
+					</optgroup>
+					<optgroup label="jumpOut">
+						<option value="jumpOutTop">jumpOutTop</option>
+						<option value="jumpOutBottom">jumpOutBottom</option>
+						<option value="jumpOutLeft">jumpOutLeft</option>
+						<option value="jumpOutRight">jumpOutRight</option>
+					</optgroup>
+					<optgroup label="bounce">
+						<option value="bounceIn">bounceIn</option>
+						<option value="bounceOut">bounceOut</option>
+					</optgroup>
+					<optgroup label="rotate">
+						<option value="rotateX">rotateX</option>
+						<option value="rotateY">rotateY</option>
+						<option value="rotateZ">rotateZ</option>
+					</optgroup>
+					<optgroup label="spin">
+						<option value="spinIn">spinIn</option>
+						<option value="spinOut">spinOut</option>
+					</optgroup>
+					<optgroup label="roll">
+						<option value="rollLeft">rollLeft</option>
+						<option value="rollRight">rollRight</option>
+						<option value="rollOutLeft">rollOutLeft</option>
+						<option value="rollOutRight">rollOutRight</option>
+					</optgroup>
+					<optgroup label="blur">
+						<option value="blurIn">blurIn</option>
+						<option value="blurInTop">blurInTop</option>
+						<option value="blurInBottom">blurInBottom</option>
+						<option value="blurInLeft">blurInLeft</option>
+						<option value="blurInRight">blurInRight</option>
+					</optgroup>
+					<optgroup label="blurOut">
+						<option value="blurOut">blurOut</option>
+						<option value="blurOutTop">blurOutTop</option>
+						<option value="blurOutBottom">blurOutBottom</option>
+						<option value="blurOutLeft">blurOutLeft</option>
+						<option value="blurOutRight">blurOutRight</option>
+					</optgroup>
+					<optgroup label="other">
+						<option value="wave">wave</option>
+						<option value="blink">blink</option>
+						<option value="vanish">vanish</option>
+						<option value="doorOpen">doorOpen</option>
+					</optgroup>
+				</select>
+				<button id="anime"
+				        class="ml-10 font-semibold px-5 py-2 border border-purple-500 rounded-md bg-purple-500 text-white transition ease focus:outline-none">
+					ANIMATE
+				</button>
+			</div>
+			<div id="icon" class="hidden w-40 h-40 mt-28 2xl:mt-60 bg-white p-10 rounded-full">
+				<img id="bee" src="images/bee.png" alt="">
+			</div>
+			<img class="h-5 w-5 absolute bottom-3 animate-bounce" src="images/down-arrow.svg" alt="">
+		</div>
+		<div class="relative flex flex-col w-screen h-full bg-yellow-200 items-center">
+			<h2 class="text-4xl font-sans text-blue-800 font-bold text-opacity-80 mt-20 mb-20">How to use?</h2>
+			<div id="steps" class="flex flex-col items-center w-full mt-5 justify-around">
+				<div class="card flex flex-col items-center bg-white w-full md:w-1/2 2xl:w-1/3 mb-10 p-10">
+					<img class="w-14 h-14 mb-5 mt-10" src="images/up.png" alt="up">
+					<p class="text-xl font-semibold font-sans">First things first.</p>
+					<p class="mt-5">Download library files from <a class="text-blue-500 underline"
+					                                               href="./wicked-animations.zip"
+					                                               download="wicked-animations">here </a></p>
+					<p>or</p>
+					<p>visit <span class="font-semibold">Github</span> repo <a class="text-blue-500 underline"
+					                                                           target="_blank"
+					                                                           href="https://github.com/d855/wicked-presentation">here</a>.
+					</p>
+					<p class="mt-5">Add library files to your project.</p>
+				</div>
+				<div class="card flex flex-col items-center bg-white w-full md:w-1/2 2xl:w-1/3 mb-10 p-10">
+					<img class="w-14 h-14 mb-5 mt-10" src="images/peace.png" alt="peace">
+					<p class="text-xl font-semibold font-sans">Link it.</p>
+					<p class="mt-5">Link css file to your header.</p>
+					<p class="bg-gray-700 text-gray-500 p-5 mt-5 rounded-md">&lt;<span class="text-red-500">link</span>
+						<span class="text-green-500 italic">rel</span>=<span class="text-yellow-500">"stylesheet"</span>
+						<span class="text-green-500 italic">href</span>=<span class="text-yellow-500">"css/wicked.css"</span>&gt;
+					</p>
+				</div>
+				<div class="card flex flex-col items-center bg-white w-full md:w-1/2 2xl:w-1/3 mb-20 p-10">
+					<img class="w-14 h-14 mb-5 mt-10" src="images/snap.png" alt="snap">
+					<p class="text-xl font-semibold font-sans">Voilà</p>
+					<p class="mt-5">Add the animation class to your element and it will perform animation.</p>
+					<p class="bg-gray-700 text-gray-500 p-5 mt-5 rounded-md">&lt;<span class="text-red-500">div</span>
+						<span class="text-green-500 italic">class</span>="<span class="text-yellow-500">wicked-rotateX</span>"&gt;
+						<span class="text-white">Example</span> &lt;/<span class="text-red-500">div</span>&gt;</p>
+				</div>
+			</div>
+		</div>
+		<div class="relative flex flex-col justify-center items-center w-sreen h-screen bg-indigo-400">
+			<div class="text-center">
+				<p class="mb-5 text-xl text-white">This library was created by pure fun and love for animations.</p>
+				<p class="mb-5 text-xl text-white">For more information head to the GitHub repo.</p>
+				<p class="text-xl text-white">There you can find a README file with list of all the animations and
+				                              additional things that you can use for your project.</p>
+			</div>
+			<a class="mt-10" target="_blank" href="https://github.com/d855/wicked-presentation"><img class="h-5 w-5"
+			                                                                                         src="images/github.png"
+			                                                                                         alt="github"></a>
+		</div>
+	</body>
 </html>
-
